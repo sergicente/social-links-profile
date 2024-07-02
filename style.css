@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --verde-principal: hsl(75, 94%, 57%);
+    --blanco: hsl(0, 0%, 100%);
+    --gris: hsl(0, 0%, 20%);
+    --gris-oscuro: hsl(0, 0%, 12%);
+    --negro-suave: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--negro-suave);
+    color: var(--blanco);
+    font-family: "Inter", sans-serif;
+}
+
+#contenedor{
+    background-color: var(--gris-oscuro);
+    width: 375px;
+box-sizing: border-box;    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+#descripcion{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#descripcion img{
+    border-radius: 50%;
+    width:90px
+}
+
+#botones{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#botones button{
+    background-color: var(--gris);
+    border: 0px;
+    color: var(--blanco);
+    padding: 15px 0;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+#botones button:hover{
+    background-color: var(--verde-principal);
+    color: var(--gris);
+    cursor: pointer;
+
+}
+
+.persona{
+    text-align: center;
+}
+
+.nombre{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.ubicacion{
+    color: var(--verde-principal);
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+.frase{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+@media (width<=400px) {
+
+    #contenedor{
+        width: calc( 100vw - 20px );
+    }
+    
+}
